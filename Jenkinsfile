@@ -4,6 +4,7 @@ pipeline {
     stage('testStage') {
       steps {
         sh 'date'
+        sh 'python'
       }
     }
   }
