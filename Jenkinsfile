@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Step_3') {
           steps {
-            mail(subject: 'Testmail', body: 'Hallo Meinolf, das ist eine Testmail von Jenkins / blueOcean', to: 'meinolf.vogt@gmx.de', from: 'mevo1961@gmail.com', mimeType: 'Mime')
+            mail(subject: 'Testmail', body: 'Hallo Meinolf, das ist eine Testmail von Jenkins / blueOcean', to: 'meinolf.vogt@gmx.de', from: 'mevo1961@gmail.com')
           }
         }
       }
