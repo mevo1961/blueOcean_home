@@ -4,7 +4,7 @@ pipeline {
     stage('testStage') {
       steps {
         sh 'date'
-        sh 'python'
+        sh 'scripts/hello.py'
       }
     }
   }
