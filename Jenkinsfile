@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('Steps') {
+    stage('Stage_1') {
       parallel {
         stage('Step_1') {
           steps {
@@ -27,6 +27,11 @@ pipeline {
             sh 'date'
           }
         }
+      }
+    }
+    stage('Stage_2') {
+      steps {
+        sh 'date'
       }
     }
   }
